@@ -1,0 +1,16 @@
+# Remove the current .gitignore content
+echo "# Python specific
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+my_env/
+venv/
+.pytest_cache/
+
+# Logs
+*.log
+
+# Local env files
+.env" > .gitignore

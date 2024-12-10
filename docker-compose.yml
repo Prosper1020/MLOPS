@@ -1,0 +1,20 @@
+services:
+  api:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: mlops-api
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql://postgres:MLOPS@host.docker.internal:5432/My_Data_Base
+      - SECRET_KEY=mysecretkey
+    volumes:
+      - ./model:/app/model
+      - ./app.log:/app/app.log
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+networks:
+  default:
+    name: mlops-network

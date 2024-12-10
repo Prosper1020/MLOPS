@@ -8,7 +8,7 @@ import pandas as pd
 router = APIRouter()
 
 # Database connection setup
-DATABASE_URL = "postgresql://postgres:MLOPS@localhost:5432/My_Data_Base"
+DATABASE_URL = "postgresql://postgres:MLOPS@host.docker.internal:5432/My_Data_Base"
 engine = create_engine(DATABASE_URL)
 
 # Load the model

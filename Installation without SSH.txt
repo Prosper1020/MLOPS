@@ -1,0 +1,26 @@
+# Install FastAPI and its optional dependencies
+pip install "fastapi[standard]==0.112.0" --trusted-host pypi.org --trusted-host files.pythonhosted.org
+
+# Install Uvicorn
+pip install uvicorn==0.25.0 --trusted-host pypi.org --trusted-host files.pythonhosted.org
+
+# Install Pandas
+pip install pandas==2.1.4 --trusted-host pypi.org --trusted-host files.pythonhosted.org
+
+# Install scikit-learn
+pip install scikit-learn==1.3.2 --trusted-host pypi.org --trusted-host files.pythonhosted.org
+
+# Install SQLAlchemy
+pip install SQLAlchemy==2.0.23 --trusted-host pypi.org --trusted-host files.pythonhosted.org
+
+# Install PyMySQL
+pip install pymysql==1.1.0 --trusted-host pypi.org --trusted-host files.pythonhosted.org
+
+# Install Python-JOSE
+pip install python-jose==3.3.0 --trusted-host pypi.org --trusted-host files.pythonhosted.org
+
+# Install Passlib
+pip install passlib==1.7.4 --trusted-host pypi.org --trusted-host files.pythonhosted.org
+
+# Install Joblib
+pip install joblib==1.3.2 --trusted-host pypi.org --trusted-host files.pythonhosted.org

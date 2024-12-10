@@ -7,7 +7,7 @@ from pydantic import BaseModel
 router = APIRouter()
 
 # Database connection setup (Replace with your actual credentials)
-DATABASE_URL = "postgresql://postgres:MLOPS@localhost:5432/My_Data_Base"
+DATABASE_URL = "postgresql://postgres:MLOPS@host.docker.internal:5432/My_Data_Base"
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
